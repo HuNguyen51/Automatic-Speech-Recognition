@@ -13,3 +13,4 @@ Do train ngắt quãng nhiều lần nên sẽ có nhiều đồ thị lỗi (đ
 # Những điểm cần lưu ý
 - Với input mà model có thể nhận là (batch_size, seq_len, d_model), chúng ta sẽ sử dụng CONDV để trích xuất đặc trưng của đoạn âm thanh, ngoài ra do đoạn âm thanh khá dài nên ta dùng strikes là 2 để giảm chiều của đoạn âm thanh đó
 - Với output thì là tiếng Việt, sẽ có những ký tự như ă, ắ, ơ, ớ, è, ê nên khi tạo vectorize ta phải thêm vào
+- Bài này sẽ dừng ở mức độ demo nên có độ chính xác cao ở tập train nhưng tập test thì chưa do thời gian huấn luyện còn quá ít
